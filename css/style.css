@@ -1,0 +1,72 @@
+/*General styles*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+}
+a {
+    text-decoration: none;
+}
+.bl-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.bl-align-center {
+    align-items: center;
+}
+
+/*Header*/
+header nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(25, 7, 57, 0.5);
+    padding: 10px 0;
+}
+header nav ul.bl-nav-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+header nav ul.bl-nav-menu li a {
+    display: block;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 16px;
+}
+header nav ul.bl-nav-menu li :last-child a {
+    padding-right: 0;
+}
+header nav ul.bl-nav-menu li a :after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: white;
+}
+header nav ul.bl-nav-menu li a:hover :after {
+    width: 100%;
+}
+.bl-main-banner{
+    display: block;
+    width: 100%;
+}
+
+/*Logo*/
+.bl-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 26px;
+    border: solid 2px white;
+    border-radius: 100%;
+}
