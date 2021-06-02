@@ -1,3 +1,7 @@
+/*Fonts*/
+@import 'fonts.css';
+
+
 /*General styles*/
 body {
     margin: 0;
@@ -7,6 +11,29 @@ body {
 a {
     text-decoration: none;
 }
+header {
+    position: relative;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: lighter;
+}
+h3 {
+    width: 100%;
+    margin-top:0 ;
+    font-size: 40px;
+    text-align: center;
+}
+h3::first-letter {
+    color:#4e499d;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px  #787272;
+}
+
 .bl-container {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +53,7 @@ header nav {
     width: 100%;
     background: rgba(25, 7, 57, 0.5);
     padding: 10px 0;
+    z-index: 999;
 }
 header nav ul.bl-nav-menu {
     margin: 0;
@@ -40,7 +68,7 @@ header nav ul.bl-nav-menu li a {
     text-transform: uppercase;
     padding: 0 16px;
 }
-header nav ul.bl-nav-menu li :last-child a {
+header nav ul.bl-nav-menu li:last-child a{
     padding-right: 0;
 }
 header nav ul.bl-nav-menu li a:after {
@@ -56,6 +84,30 @@ header nav ul.bl-nav-menu li a:after {
 header nav ul.bl-nav-menu li a:hover:after {
     width: 100%;
     opacity: 1;
+}
+.bl-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.bl-header-text .bl-arrow {
+    border: solid 3px white;
+    border-width: 0 3px 3px 0;
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+}
+.bl-header-text .bl-arrow:hover {
+    opacity: .7;
 }
 .bl-main-banner{
     display: block;
@@ -73,4 +125,38 @@ header nav ul.bl-nav-menu li a:hover:after {
     font-size: 26px;
     border: solid 2px white;
     border-radius: 100%;
+}
+
+/*Sections*/
+.bl-section {
+    padding: 85px 0;
+}
+
+/*About us*/
+#bl-about .bl-column {
+    width: 40%;
+    margin-top: 25px;
+    text-align: center;
+}
+#bl-about i {
+    font-size: 45px;
+    color: #4e499d;
+}
+
+/*Animations*/
+.bl-pulsate {
+    -webkit-animation: pulsate 4s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.3;
+}
+@-webkit-keyframes pulsate{
+    0%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.3;
+    }
 }
