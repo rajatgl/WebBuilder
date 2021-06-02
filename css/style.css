@@ -43,15 +43,19 @@ header nav ul.bl-nav-menu li a {
 header nav ul.bl-nav-menu li :last-child a {
     padding-right: 0;
 }
-header nav ul.bl-nav-menu li a :after {
+header nav ul.bl-nav-menu li a:after {
     content: "";
     display: block;
     height: 1px;
     width: 0;
     background-color: white;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-header nav ul.bl-nav-menu li a:hover :after {
+header nav ul.bl-nav-menu li a:hover:after {
     width: 100%;
+    opacity: 1;
 }
 .bl-main-banner{
     display: block;
