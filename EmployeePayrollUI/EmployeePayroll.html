@@ -19,7 +19,7 @@
         </div>
     </header>
     <div class="form-content">
-        <form class="form">
+        <form class="form" action="#" onsubmit="save(); return false">
             <div class="form-head">
                 Employee Payroll Form
             </div>
@@ -47,7 +47,105 @@
                             <img class="profle" id="image1" src="./assets/profile-images/Ellipse -4.png">
                         </label>
                     </div>
-            </div>
+                </div>
+                <div class="row-content" style="margin-top: 30px;">
+                    <label class="lable text" for="gender">Gender</label>
+                    <div>
+                        <input type = "radio" id="male" value="male">
+                        <lable>Male</lable>
+                        <input type = "radio" id="female" value="female">
+                        <lable>Female</lable>
+                    </div>
+                </div>
+                <div class="row-content" style="margin-top: 30px;">
+                    <label class="lable text" for="department">Department</label>
+                    <div>
+                        <input type = "checkbox" id="HR" name="hr" value="HR">
+                        <lable for = "hr">HR</lable>
+
+                        <input type = "checkbox" id="SALES" name="sales" value="Sales">
+                        <lable for = "sales">Sales</lable>
+
+                        <input type = "checkbox" id="FINANCE" name="finance" value="Finance">
+                        <lable for = "finance">Finance</lable>
+
+                        <input type = "checkbox" id="ENGINEER" name="engineer" value="Engineer">
+                        <lable for = "engineer">Engineer</lable>
+
+                        <input type = "checkbox" id="OTHERS" name="others" value="Others">
+                        <lable for = "others">Others</lable>
+                    </div>     
+                </div>
+                <div class="row-content" style="margin-top: 30px;">
+                    <label class = "lable text" for="salary">Choose Your Salary</label>
+                    <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="10" value="400000">
+                    <output class="salary-output text" for="salary">400000</output>
+                </div>
+                <div class="row-content" style="margin-top: 30px;">
+                    <label class="lable text" for="date">Start Date</label>
+                    <div>
+                        <select id="day" name="Day" value="Day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select id="month" name="Month" value="Month">
+                            <option value="Jan">January</option>
+                            <option value="Feb">February</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            <option value="May">may</option>
+                            <option value="Jun">Jum</option>
+                            <option value="Jul">Jul</option>
+                            <option value="Aug">Aug</option>
+                            <option value="Sep">Sep</option>
+                            <option value="Oct">Oct</option>
+                            <option value="Nov">Nov</option>
+                            <option value="Dec">Dec</option>
+                        </select>
+                        <select id="year" name="Day" value="Day"></select>
+                    </div>
+                </div>
+                <div class="row-content">
+                    <label class="lable text" for="note">Note</label>
+                    <textarea id="notes" name="notes" class="input" style="height: 100px;"></textarea>
+                </div>
+                <div class="button-parent">
+                    <a href="./AddEmployee.html" class="button reset-button cancel-button">Cancel</a>
+                    <div>
+                        <button type="submit" class="button submit-button">Submit</button>
+                        <button type="reset" class="button reset-button">Reset</button>
+                    </div>    
+                </div>
+
         </form>
     </div>
     <footer>
